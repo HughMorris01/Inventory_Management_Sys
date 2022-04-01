@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InventoryMainScreenController">
+   <children>
+      <Rectangle arcHeight="25.0" arcWidth="25.0" fill="#f9fafa" height="400.0" layoutX="25.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" width="360.0" />
+      <Label layoutX="244.0" layoutY="32.0" text="Inventory Managment System">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="25.0" arcWidth="22.0" fill="#f5f6f7" height="400.0" layoutX="415.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" width="360.0" />
+      <Group layoutX="55.0" layoutY="194.0">
+         <children>
+            <TableView fx:id="partTable" layoutX="-15.0" layoutY="-10.0" prefHeight="255.0" prefWidth="325.0">
+              <columns>
+                <TableColumn fx:id="partIDCol" prefWidth="70.0" text="Part ID" />
+                <TableColumn fx:id="partNameCol" prefWidth="115.0" text="Name" />
+                  <TableColumn fx:id="partInventoryCol" prefWidth="70.0" text="Inventory" />
+                  <TableColumn fx:id="partPriceCol" prefWidth="70.0" text="Price" />
+              </columns>
+            </TableView>
+         </children>
+      </Group>
+      <Group layoutX="459.0" layoutY="197.0">
+         <children>
+            <TableView fx:id="productTable" layoutX="-25.0" layoutY="-10.0" prefHeight="255.0" prefWidth="325.0">
+               <columns>
+                  <TableColumn fx:id="productIDCol" prefWidth="70.0" text="Product ID" />
+                  <TableColumn fx:id="productNameCol" prefWidth="115.0" text="Name" />
+                  <TableColumn fx:id="productInventoryCol" prefWidth="70.0" text="Inventory" />
+                  <TableColumn fx:id="productPriceCol" prefWidth="70.0" text="Price" />
+               </columns>
+            </TableView>
+         </children>
+      </Group>
+      <Button fx:id="modifyProductButton" layoutX="565.0" layoutY="455.0" mnemonicParsing="false" onAction="#toModifyProduct" prefHeight="25.0" prefWidth="75.0" text="Modify" />
+      <Button fx:id="deleteProductButton" layoutX="665.0" layoutY="455.0" mnemonicParsing="false" onAction="#toDeleteProduct" prefHeight="25.0" prefWidth="75.0" text="Delete" />
+      <Button fx:id="addPartButton" layoutX="60.0" layoutY="455.0" mnemonicParsing="false" onAction="#toAddPart" prefHeight="25.0" prefWidth="75.0" text="Add" />
+      <Button fx:id="modifyPartButton" layoutX="165.0" layoutY="455.0" mnemonicParsing="false" onAction="#toModifyPart" prefHeight="25.0" prefWidth="75.0" text="Modify" />
+      <Button fx:id="deletePartButton" layoutX="270.0" layoutY="455.0" mnemonicParsing="false" onAction="#toDeletePart" prefHeight="25.0" prefWidth="75.0" text="Delete" />
+      <Button fx:id="addProductButton" layoutX="460.0" layoutY="455.0" mnemonicParsing="false" onAction="#toAddProduct" prefHeight="25.0" prefWidth="75.0" text="Add" />
+      <Label layoutX="468.0" layoutY="140.0" prefHeight="20.0" prefWidth="62.0" text="Products">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="productSearchTextField" layoutX="619.0" layoutY="135.0" onAction="#searchProducts" prefHeight="30.0" prefWidth="140.0" promptText="Search by Name or ID..." />
+      <Label layoutX="71.0" layoutY="140.0" prefHeight="20.0" prefWidth="40.0" text="Parts">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="partSearchTextField" layoutX="225.0" layoutY="135.0" onAction="#searchParts" prefHeight="30.0" prefWidth="140.0" promptText="Search by Name or ID..." />
+      <Button fx:id="exitButton" layoutX="683.0" layoutY="540.0" mnemonicParsing="false" onAction="#closeProgram" prefHeight="25.0" prefWidth="75.0" text="Exit" />
+   </children>
+</AnchorPane>
