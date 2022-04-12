@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddPartScreenController"><children>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddPartScreenController">
       <Label layoutX="70.0" layoutY="37.0" text="Add Part">
          <font>
             <Font name="System Bold" size="15.0" />
@@ -31,5 +31,4 @@
       <TextField fx:id="priceTextField" layoutX="180.0" layoutY="220.0" prefWidth="125.0" />
       <TextField fx:id="minTextField" layoutX="180.0" layoutY="260.0" prefHeight="26.0" prefWidth="85.0" />
       <TextField fx:id="radioButtonTextField" layoutX="180.0" layoutY="300.0" prefWidth="125.0" />
-   </children>
 </AnchorPane>
