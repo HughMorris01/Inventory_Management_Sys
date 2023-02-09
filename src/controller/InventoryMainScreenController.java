@@ -90,9 +90,9 @@ public class InventoryMainScreenController implements Initializable {
         stage.show();
     }
 
-    /** This method is an event handler for the Add button under the Products table.
+    /** This method is an event handler on the Add button under the Products table.
      * Upon clicking the button this method loads the AddProductScreen FXML document and
-     * redirects the stage to load the Add Part screen.
+     * redirects the stage to load the Add Product screen.
      * @param actionEvent Passed from the On Action event listener in the InventoryMainScreen FXML document
      * @throws IOException Exception gets thrown if load() cannot locate the FXML file
      * */
