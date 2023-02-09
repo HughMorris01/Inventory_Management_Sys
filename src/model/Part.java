@@ -1,7 +1,6 @@
 package model;
 /**
- * This is an abstract class and is not intended to be instantiated.
- * The class represents Part objects and each object contains a number of descriptive attribute fields. There are setter
+ * This abstract class represents Part objects and each object contains a number of descriptive attribute fields. There are setter
  * and getter functions for each of the class' fields that must be utilized by subclasses in order to access these
  * fields.
  * @author Greg Farrell
