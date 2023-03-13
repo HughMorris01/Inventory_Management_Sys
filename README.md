@@ -1,5 +1,1 @@
-# Simple_Inventory_Management_Sys
-C482 - Performance Assessment. Inventory Management Sys w/ CRUD
-
-
-TODO Create Readme
+This is an inventory management application built in Java that interfaces with a MySQL database. The application contains two classes of items, parts and also products, which can be composed of parts. The application allows the user to perform CRUD operations on both classes but prevents product items from being deleted if they have associated parts.
